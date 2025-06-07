@@ -1,6 +1,6 @@
-import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { User, Edit3, MapPin, Calendar, Star, Award, Settings } from 'lucide-react'
+import { Edit3, MapPin, Calendar, Star, Award, Settings } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
 import { useAuthStore } from '../../store/authStore'
 import { Avatar } from '../../components/ui/Avatar'
 import { Button } from '../../components/ui/Button'
@@ -155,8 +155,8 @@ const ProfileTab = () => {
                   </motion.div>
               </div>
             </div>
-          </div>
-
+          </Card>
+          
           {/* Achievements */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8">
             <h3 className="text-xl font-bold text-gray-900 mb-6">Achievements</h3>
@@ -199,11 +199,11 @@ const ProfileTab = () => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
+  </div>
   )
-}
 
 const SettingsTab = () => (
   <div className="h-full overflow-y-auto bg-gray-50">
@@ -408,5 +408,5 @@ const ProfilePage = () => {
     return <ProfileTab />
   }
 }
-
-export default ProfilePage
+}
+export default ProfileTab
