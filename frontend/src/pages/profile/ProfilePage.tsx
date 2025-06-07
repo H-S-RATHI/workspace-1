@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { User, Edit3, MapPin, Calendar, Star, Award, Settings } from 'lucide-react'
 import { useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { User, Edit3, MapPin, Calendar, Star, Award, Settings } from 'lucide-react'
 import { useAuthStore } from '../../store/authStore'
 import { Avatar } from '../../components/ui/Avatar'
 import { Button } from '../../components/ui/Button'
